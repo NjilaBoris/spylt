@@ -1,10 +1,12 @@
-import Button from "@/components/Button";
+import Hero from "@/components/Hero";
 import React from "react";
 
 const Home = () => {
   return (
     <div>
-      <Button />
+      <div className="bg-main-bg ">
+        <Hero />
+      </div>
     </div>
   );
 };
