@@ -1,4 +1,5 @@
 import Content from "@/components/Content";
+import Flavor from "@/components/Flavor";
 import Hero from "@/components/Hero";
 import LenisWrapper from "@/components/LenisWrapper";
 import React from "react";
@@ -11,6 +12,7 @@ const Home = () => {
           <Hero />
           <Content />
         </div>
+        <Flavor />
       </div>
     </LenisWrapper>
   );

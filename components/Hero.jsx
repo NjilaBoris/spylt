@@ -8,7 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   useGSAP(() => {
     const title = SplitText.create(".hero-title");
-    const heading = SplitText.create(".heading");
+    const heading = SplitText.create(".heading", {
+      type: "words, lines",
+      linesClass: "paragraph-line",
+    });
     const tl = gsap.timeline({
       delay: 1,
     });
@@ -39,11 +42,12 @@ const Hero = () => {
       .from(
         heading.words,
         {
-          yPercent: 20,
-          duration: 0.5,
-          stagger: 0.02,
-          ease: "power3.out",
+          yPercent: 300,
+          rotate: 3,
+          ease: "power1.inOut",
+          duration: 1,
           opacity: 0,
+          stagger: 0.01,
         },
         0
       );
