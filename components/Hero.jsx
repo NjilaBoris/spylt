@@ -52,8 +52,7 @@ const Hero = () => {
         trigger: ".hero-container",
         start: "1% top",
         end: "bottom top",
-        markers: true,
-        scrub: true,
+        scrub: 0.05,
       },
     });
     heroTl.to(".hero-container", {
